@@ -55,13 +55,13 @@ public class Iphone implements AparelhoTelefonico, ReprodutorMusical, NavegadorI
     }
 
     @Override
-    public boolean tocar() {
-        return true;
+    public String tocar() {
+        return "Musica tocando";
     }
 
     @Override
-    public boolean pausar() {
-        return false;
+    public String pausar() {
+        return "Musica pausada";
     }
 
     @Override

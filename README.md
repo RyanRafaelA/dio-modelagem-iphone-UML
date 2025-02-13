@@ -13,8 +13,8 @@ Este projeto tem como objetivo principal aprimorar minhas hebilidade em diagrama
 ```mermaid
 classDiagram
     class ReprodutorMusical {
-        + tocar(): boolean
-        + pausar(): boolean
+        + tocar(): String
+        + pausar(): String
         + selecionarMusica(musica: String): void
     }
 

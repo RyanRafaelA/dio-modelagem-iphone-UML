@@ -1,7 +1,7 @@
 package model.interfaces;
 
 public interface ReprodutorMusical {
-    boolean tocar();
-    boolean pausar();
+    String tocar();
+    String pausar();
     void selecionarMusica(String musica);
 }
