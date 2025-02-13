@@ -9,7 +9,8 @@ public class IphoneService {
         char pausar =  'n';
 
         while (pausar != 's') {
-            System.out.print("Selecione a musica");
+            sc.nextLine();
+            System.out.print("Selecione a musica: ");
             iphone.selecionarMusica(sc.nextLine());
 
             iphone.tocar();
@@ -44,6 +45,7 @@ public class IphoneService {
     public static void internet(Scanner sc, Iphone iphone){
         int opc = 0;
 
+        sc.nextLine();
         System.out.print("Url site: ");
         iphone.exibirPagina(sc.nextLine());
         while(opc != 3) {
@@ -51,6 +53,7 @@ public class IphoneService {
             opc =sc.nextInt();
 
             if(opc == 1){
+                sc.nextLine();
                 System.out.print("Url site: ");
                 iphone.exibirPagina(sc.nextLine());
             } else if(opc == 2){
